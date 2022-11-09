@@ -24,8 +24,9 @@ class Solution {
         else{
             ListNode prev = head;
             ListNode curr = head.next;
-            ListNode forw = head.next.next;
             prev.next =null;
+            ListNode forw = curr.next;
+            
             while(curr.next!=null){
                 curr.next = prev;
                 prev = curr;
